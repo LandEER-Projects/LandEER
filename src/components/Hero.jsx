@@ -1,7 +1,6 @@
 import { ArrowRight, MessageCircle } from 'lucide-react';
 import { whatsappBase } from '../data.js';
-
-const heroMesh = `${import.meta.env.BASE_URL}assets/hero-neon-mesh.png`;
+import { InteractiveMeshBackground } from './InteractiveMeshBackground.jsx';
 
 export function Hero() {
   return (
@@ -9,12 +8,9 @@ export function Hero() {
       <span id="hero-revelado" className="absolute top-[72vh] h-px w-px overflow-hidden" aria-hidden="true" />
       <div className="sticky top-0 min-h-screen overflow-hidden pt-20">
         <div className="absolute inset-0 -z-20 bg-[radial-gradient(circle_at_top_right,rgba(59,130,255,0.26),transparent_30%),radial-gradient(circle_at_20%_10%,rgba(168,85,255,0.22),transparent_26%),linear-gradient(180deg,#05060D_0%,#0D0F1A_100%)]" />
-        <img
-          src={heroMesh}
-          alt=""
-          aria-hidden="true"
-          className="absolute inset-y-10 right-[-28rem] -z-10 h-[82vh] w-[72rem] max-w-none object-cover mix-blend-screen sm:right-[-20rem] lg:right-[-9rem] xl:right-0"
-        />
+        <div className="absolute inset-0 -z-10">
+          <InteractiveMeshBackground />
+        </div>
         <div className="absolute inset-x-0 bottom-0 -z-10 h-44 bg-gradient-to-t from-night to-transparent" />
         <div className="absolute left-1/2 top-24 -z-10 h-72 w-72 -translate-x-1/2 rounded-full bg-landeer-purple/20 blur-[110px]" />
 

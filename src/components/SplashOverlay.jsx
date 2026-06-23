@@ -20,13 +20,15 @@ export function SplashOverlay() {
         style={{ opacity: logoOpacity, scale: logoScale }}
         src={splashLogo}
         alt=""
-        className="h-auto w-[min(62vw,21rem)] drop-shadow-[0_0_78px_rgba(123,61,255,0.3)] sm:w-[min(40vw,30rem)]"
+        className="relative z-10 h-auto w-[min(52vw,17rem)] drop-shadow-[0_0_64px_rgba(123,61,255,0.34)] sm:w-[min(34vw,24rem)]"
       />
+      <div className="absolute left-1/2 top-1/2 z-0 h-72 w-72 -translate-x-1/2 -translate-y-1/2 rounded-full bg-landeer-purple/24 blur-[86px] sm:h-96 sm:w-96" />
+      <div className="absolute left-[58%] top-[46%] z-0 h-56 w-56 -translate-x-1/2 -translate-y-1/2 rounded-full bg-landeer-cyan/18 blur-[78px] sm:h-72 sm:w-72" />
+      <div className="absolute left-[43%] top-[54%] z-0 h-48 w-48 -translate-x-1/2 -translate-y-1/2 rounded-full bg-landeer-blue/18 blur-[72px] sm:h-64 sm:w-64" />
       <motion.div
         style={{ opacity: hintOpacity }}
-        className="absolute bottom-10 left-1/2 flex -translate-x-1/2 flex-col items-center gap-3 text-landeer-text sm:bottom-12"
+        className="absolute bottom-10 left-1/2 z-10 flex -translate-x-1/2 text-landeer-text sm:bottom-12"
       >
-        <span className="text-xs font-semibold uppercase tracking-[0.28em]">Role para ver</span>
         <motion.span
           animate={{ y: [0, 8, 0] }}
           transition={{ duration: 1.35, repeat: Infinity, ease: 'easeInOut' }}
