@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { ChevronDown } from 'lucide-react';
 
-const splashLogo = `${import.meta.env.BASE_URL}assets/landeer-logo-mark-compact.png`;
+const splashLogo = `${import.meta.env.BASE_URL}assets/landeer-logo-full.png`;
 
 export function SplashOverlay() {
   const overlayRef = useRef(null);
@@ -68,7 +68,7 @@ export function SplashOverlay() {
         src={splashLogo}
         alt=""
         decoding="async"
-        className="relative z-10 h-auto w-[min(34vw,10rem)] transform-gpu drop-shadow-[0_0_58px_rgba(123,61,255,0.36)] sm:w-[min(21vw,13.5rem)]"
+        className="relative z-10 h-auto w-[min(76vw,28rem)] transform-gpu drop-shadow-[0_0_58px_rgba(123,61,255,0.36)] sm:w-[min(46vw,34rem)]"
       />
       <div className="absolute left-1/2 top-1/2 z-0 h-72 w-72 -translate-x-1/2 -translate-y-1/2 rounded-full bg-landeer-purple/24 blur-[86px] sm:h-96 sm:w-96" />
       <div className="absolute left-[58%] top-[46%] z-0 h-56 w-56 -translate-x-1/2 -translate-y-1/2 rounded-full bg-landeer-cyan/18 blur-[78px] sm:h-72 sm:w-72" />

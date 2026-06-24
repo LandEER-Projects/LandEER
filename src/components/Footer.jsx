@@ -7,7 +7,6 @@ export function Footer() {
       <div className="mx-auto flex max-w-7xl flex-col gap-8 px-4 sm:px-6 md:flex-row md:items-center md:justify-between lg:px-8">
         <div>
           <Logo compact />
-          <p className="mt-3 text-sm text-landeer-text">Landing pages que geram resultados.</p>
         </div>
         <div className="flex flex-wrap items-center gap-2">
           {socialLinks.map(({ href, label, icon: Icon }) => (
