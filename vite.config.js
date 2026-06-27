@@ -5,4 +5,4 @@ export default defineConfig({
   base: '/LandEER/',
   plugins: [react()],
 });
-#alterado
+
