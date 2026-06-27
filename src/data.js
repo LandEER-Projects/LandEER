@@ -106,3 +106,4 @@ export const plans = [
 ];
 
 export const decorativeIcons = [WandSparkles, Code2, Rocket];
+#alterado
