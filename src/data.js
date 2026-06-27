@@ -1,4 +1,4 @@
-peimport {
+import {
   BadgeCheck,
   BriefcaseBusiness,
   Code2,
